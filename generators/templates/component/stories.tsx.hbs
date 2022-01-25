@@ -1,0 +1,27 @@
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { {{pascalCase name}} } from '.'
+
+export default {
+  title: '{{pascalCase name}}',
+  component: {{pascalCase name}},
+  parameters: {
+    design: {
+      type: 'figma',
+      url: 'https://www.figma.com/file/fileUrl',
+    },
+  },
+  args: {
+    title: '{{pascalCase name}}',
+  },
+} as ComponentMeta<typeof {{pascalCase name}}>
+
+const Template: ComponentStory<typeof {{pascalCase name}}> = (args) => {
+  return (
+    <div>
+      <{{pascalCase name}} {...args} />
+    </div>
+  )
+}
+
+export const Default = Template.bind({})
+Default.args = {}
