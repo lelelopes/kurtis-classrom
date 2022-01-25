@@ -1,11 +1,9 @@
-import Main from 'components/Main'
-
 import { GET_CHARACTERS } from 'graphql/queries/sample'
 
 import api from 'services/api'
 
 export default function Home() {
-  return <Main />
+  return <div>Main page</div>
 }
 
 export async function getServerSideProps() {
